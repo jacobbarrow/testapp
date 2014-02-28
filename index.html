@@ -1,0 +1,75 @@
+<!-- 
+Length, Girth, Price of Food/kg, Food, Selling Price, Butcher's Price, Abbatiour Price, Other Costs.
+Weight, Turnover, Profit, Expenditure -->
+<html>
+
+<head>
+<title>This Little Pig</title>
+<script src="calculate.js"></script>
+</head>
+
+<body>
+
+<!--<script type="text/javascript">
+	window.onload = function(){
+	    var girth = el('girth'),
+	        foodPrice = el('foodPrice'),
+	        foodAmount = el('foodAmount'),
+	        sellPrice = el('sellPrice'),
+	        butcherPrice = el('butcherPrice'),
+	        abPrice = el('abPrice'),
+	        otherPrice = el('otherPrice'),
+	        weight = el('weight'),
+	        turnover = el('turnover'),
+	        profit = el('profit'),
+	        expenditure = el('expenditure'),
+	        button = el('submit');
+	
+	    function el(id) {
+	        return document.getElementById(id);
+	    };
+	
+	    function multiply() {
+	        var x = parseFloat(girth.value),
+	            y = parseFloat(foodPrice.value);
+
+	
+	        weight.innerHTML = x * y;
+	        return false;
+
+	    }
+	
+	    button.onclick = multiply;
+	};
+</script>-->
+
+<form>
+<label>Length</label><input type="number" id="length">
+<br>
+<label>Girth</label><input type="number" id="girth">
+<br>
+<label>Price of Food</label><input type="number" id="foodPrice">
+<br>
+<label>kgs of Food</label><input type="number" id="foodAmount">
+<br>
+<label>Selling Price/kg</label><input type="number" id="sellPrice">
+<br>
+<label>Butchering Fee</label><input type="number" id="butcherPrice">
+<br>
+<label>Abattoir Fee</label><input type="number" id="abPrice">
+<br>
+<label>Other Costs</label><input type="number" id="otherPrice">
+<br>
+<button id="submit">Calculate</button>
+</form>
+
+<p id="result">
+    Weight:<span id="weight">&nbsp;</span>
+    <br>
+    Turnover:<span id="turnover">&nbsp;</span>
+    <br>
+    Profit:<span id="profit">&nbsp;</span>
+    <br>
+    Expenditure:<span id="expenditure">&nbsp;</span>
+</p>
+</body>
