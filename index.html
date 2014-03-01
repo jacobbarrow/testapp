@@ -7,7 +7,6 @@ Weight, Turnover, Profit, Expenditure -->
 <title>This Little Pig</title>
 <script src="js/calculate.js"></script>
 <script src="js/jquery.js"></script>
-<script src="js/label.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -15,35 +14,35 @@ Weight, Turnover, Profit, Expenditure -->
 <h1>This Little Piggy</h1>
 <form id="calculate">
 <div class="field--wrapper">
-<label>Length</label><input type="number" name="fname" id="length" placeholder="Length" value="1">
+<label>Length</label><input type="number" name="fname" id="length" value="1">
 </div>
 <br>
 <div class="field--wrapper">
-<label>Girth</label><input type="number" id="girth" placeholder="Girth">
+<label>Girth</label><input type="number" id="girth" >
 </div>
 <br>
 <div class="field--wrapper">
-<label>Price of Food</label><input type="number" id="foodPrice" placeholder="Price of Food">
+<label>Price of Food</label><input type="number" id="foodPrice">
 </div>
 <br>
 <div class="field--wrapper">
-<label>kgs of Food</label><input type="number" id="foodAmount" placeholder="kgs of Food">
+<label>kgs of Food</label><input type="number" id="foodAmount">
 </div>
 <br>
 <div class="field--wrapper">
-<label>Selling Price/kg</label><input type="number" id="sellPrice" placeholder="Selling Price">
+<label>Selling Price/kg</label><input type="number" id="sellPrice">
 </div>
 <br>
 <div class="field--wrapper">
-<label>Butchering Fee</label><input type="number" id="butcherPrice" placeholder="Butchering Fee">
+<label>Butchering Fee</label><input type="number" id="butcherPrice">
 </div>
 <br>
 <div class="field--wrapper">
-<label>Abattoir Fee</label><input type="number" id="abPrice" placeholder="Abattoir Fee">
+<label>Abattoir Fee</label><input type="number" id="abPrice">
 </div>
 <br>
 <div class="field--wrapper">
-<label>Other Costs</label><input type="number" id="otherPrice" placeholder="Other Costs">
+<label>Other Costs</label><input type="number" id="otherPrice">
 </div>
 <br>
 <button id="submit">Calculate</button>
@@ -57,6 +56,8 @@ Weight, Turnover, Profit, Expenditure -->
     Turnover:<span id="turnover">&nbsp;</span>
     <br>
     Expenditure:<span id="expenditure">&nbsp;</span>
+    <br>
     <button id="back">Go Back</button>
 </p>
 </body>
+</html>

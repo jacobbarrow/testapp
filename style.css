@@ -1,23 +1,11 @@
 .field--wrapper {
   position:relative;
   padding: 5px 0px;
-  margin: 6px 0px;
 }
 
+
 label {
-  position:absolute;
-  top:-13px;
-  left:0;
-  font-size:11px;
-  color:#aaa;
-  transition: all 0.1s linear;
-  opacity:0;
-  font-weight:bold;
-}
-label.on {
   color:#4481C4;
-}
-label.show {
   top:26px;
   opacity:1;
 }
@@ -40,7 +28,6 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 15px;
-	height: 960px;
 }
 
 h1 {
@@ -51,5 +38,5 @@ h1 {
 	background: #ab00ff;
 	border: none;
 	color: #fff;
-	height: 30px;
+	
 }
