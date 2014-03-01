@@ -1,0 +1,55 @@
+.field--wrapper {
+  position:relative;
+  padding: 5px 0px;
+  margin: 6px 0px;
+}
+
+label {
+  position:absolute;
+  top:-13px;
+  left:0;
+  font-size:11px;
+  color:#aaa;
+  transition: all 0.1s linear;
+  opacity:0;
+  font-weight:bold;
+}
+label.on {
+  color:#4481C4;
+}
+label.show {
+  top:26px;
+  opacity:1;
+}
+
+#result {
+	display:none;
+}
+input {  
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  padding: 0.3125em 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-bottom: 0.125em solid #bbbbbb;
+}
+body {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+	height: 960px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#submit {
+	background: #ab00ff;
+	border: none;
+	color: #fff;
+	height: 30px;
+}

@@ -5,60 +5,46 @@ Weight, Turnover, Profit, Expenditure -->
 
 <head>
 <title>This Little Pig</title>
-<script src="calculate.js"></script>
+<script src="js/calculate.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/label.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-<!--<script type="text/javascript">
-	window.onload = function(){
-	    var girth = el('girth'),
-	        foodPrice = el('foodPrice'),
-	        foodAmount = el('foodAmount'),
-	        sellPrice = el('sellPrice'),
-	        butcherPrice = el('butcherPrice'),
-	        abPrice = el('abPrice'),
-	        otherPrice = el('otherPrice'),
-	        weight = el('weight'),
-	        turnover = el('turnover'),
-	        profit = el('profit'),
-	        expenditure = el('expenditure'),
-	        button = el('submit');
-	
-	    function el(id) {
-	        return document.getElementById(id);
-	    };
-	
-	    function multiply() {
-	        var x = parseFloat(girth.value),
-	            y = parseFloat(foodPrice.value);
-
-	
-	        weight.innerHTML = x * y;
-	        return false;
-
-	    }
-	
-	    button.onclick = multiply;
-	};
-</script>-->
-
-<form>
-<label>Length</label><input type="number" id="length">
+<h1>This Little Piggy</h1>
+<form id="calculate">
+<div class="field--wrapper">
+<label>Length</label><input type="number" name="fname" id="length" placeholder="Length" value="1">
+</div>
 <br>
-<label>Girth</label><input type="number" id="girth">
+<div class="field--wrapper">
+<label>Girth</label><input type="number" id="girth" placeholder="Girth">
+</div>
 <br>
-<label>Price of Food</label><input type="number" id="foodPrice">
+<div class="field--wrapper">
+<label>Price of Food</label><input type="number" id="foodPrice" placeholder="Price of Food">
+</div>
 <br>
-<label>kgs of Food</label><input type="number" id="foodAmount">
+<div class="field--wrapper">
+<label>kgs of Food</label><input type="number" id="foodAmount" placeholder="kgs of Food">
+</div>
 <br>
-<label>Selling Price/kg</label><input type="number" id="sellPrice">
+<div class="field--wrapper">
+<label>Selling Price/kg</label><input type="number" id="sellPrice" placeholder="Selling Price">
+</div>
 <br>
-<label>Butchering Fee</label><input type="number" id="butcherPrice">
+<div class="field--wrapper">
+<label>Butchering Fee</label><input type="number" id="butcherPrice" placeholder="Butchering Fee">
+</div>
 <br>
-<label>Abattoir Fee</label><input type="number" id="abPrice">
+<div class="field--wrapper">
+<label>Abattoir Fee</label><input type="number" id="abPrice" placeholder="Abattoir Fee">
+</div>
 <br>
-<label>Other Costs</label><input type="number" id="otherPrice">
+<div class="field--wrapper">
+<label>Other Costs</label><input type="number" id="otherPrice" placeholder="Other Costs">
+</div>
 <br>
 <button id="submit">Calculate</button>
 </form>
@@ -66,10 +52,11 @@ Weight, Turnover, Profit, Expenditure -->
 <p id="result">
     Weight:<span id="weight">&nbsp;</span>
     <br>
-    Turnover:<span id="turnover">&nbsp;</span>
-    <br>
     Profit:<span id="profit">&nbsp;</span>
     <br>
+    Turnover:<span id="turnover">&nbsp;</span>
+    <br>
     Expenditure:<span id="expenditure">&nbsp;</span>
+    <button id="back">Go Back</button>
 </p>
 </body>

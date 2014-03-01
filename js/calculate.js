@@ -1,5 +1,6 @@
 window.onload = function(){
     var girth = el('girth'),
+		length = el('length'),
         foodPrice = el('foodPrice'),
         foodAmount = el('foodAmount'),
         sellPrice = el('sellPrice'),
@@ -10,21 +11,34 @@ window.onload = function(){
         turnover = el('turnover'),
         profit = el('profit'),
         expenditure = el('expenditure'),
+        result = el('result'),
+        form = el('calculate'),
+        back = el('back'),
         button = el('submit');
 
     function el(id) {
         return document.getElementById(id);
     };
 
-    function weightF() {
+    function calculate() {
         var x = parseFloat(girth.value),
-            y = parseFloat(foodPrice.value);
-
+            y = parseFloat(length.value);
 
         weight.innerHTML = x * y;
+        profit.innerHTML = x + y;
+        
+        result.style.display = "block";
+		form.style.display = "none";
         return false;
+        
+  	};
+  	
+  	function goBack() {
+	  	result.style.display = "none";
+		form.style.display = "block";
+        return false;
+  	}
 
-    }
-
-    button.onclick = weightF;
+    button.onclick = calculate;
+    back.onclick = goBack;
 };
