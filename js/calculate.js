@@ -14,6 +14,7 @@ window.onload = function(){
         result = el('result'),
         form = el('calculate'),
         back = el('back'),
+        go = el('gogo')
         button = el('submit');
 
     function el(id) {
@@ -38,7 +39,14 @@ window.onload = function(){
 		form.style.display = "block";
         return false;
   	}
+  	
+  	function enter() {
+	  	welcome.style.display = "none";
+		form.style.display = "block";
+
+  	}
 
     button.onclick = calculate;
     back.onclick = goBack;
+    go.onclick = enter;
 };

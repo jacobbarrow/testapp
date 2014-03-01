@@ -2,7 +2,9 @@
   position:relative;
   padding: 2% 0px;
 }
-
+#calculate {
+	display: none;
+}
 
 label {
   color:#4481C4;
