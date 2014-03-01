@@ -1,6 +1,6 @@
 .field--wrapper {
   position:relative;
-  padding: 5px 0px;
+  padding: 2% 0px;
 }
 
 
@@ -38,5 +38,6 @@ h1 {
 	background: #ab00ff;
 	border: none;
 	color: #fff;
+	text-align: center;
 	
 }
