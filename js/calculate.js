@@ -14,7 +14,8 @@ window.onload = function(){
         result = el('result'),
         form = el('calculate'),
         back = el('back'),
-        go = el('gogo')
+        go = el('gogo'),
+        save = el('save'),
         button = el('submit');
 
     function el(id) {
@@ -25,11 +26,12 @@ window.onload = function(){
         var x = parseFloat(girth.value),
             y = parseFloat(length.value);
 
-        weight.innerHTML = x * y;
-        profit.innerHTML = x + y;
+        weight.innerHTML = 'Weight: ' + (x * y);
+        profit.innerHTML = 'Profit: ' + (x + y);
         
         result.style.display = "block";
 		form.style.display = "none";
+		
         return false;
         
   	};
@@ -43,10 +45,15 @@ window.onload = function(){
   	function enter() {
 	  	welcome.style.display = "none";
 		form.style.display = "block";
+		return false;
 
   	}
-
+  	function savePreferences() {
+	  	localStorage.foodPrice=document.foodPrice.value;
+	  	return false;
+  	}
     button.onclick = calculate;
     back.onclick = goBack;
     go.onclick = enter;
+    save.onclick = savePreferences;
 };

@@ -11,7 +11,11 @@ label {
   top:26px;
   opacity:1;
 }
-
+#unit {
+	font-size: 12px;
+	margin-left: 10px;
+	padding-bottom: 5px;
+}
 #result {
 	display:none;
 }
@@ -36,10 +40,13 @@ h1 {
 	text-align: center;
 }
 
-#submit {
+button {
 	background: #ab00ff;
 	border: none;
 	color: #fff;
-	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 0;
+
 	
 }

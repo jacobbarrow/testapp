@@ -7,6 +7,7 @@ Weight, Turnover, Profit, Expenditure -->
 <title>This Little Pig</title>
 <script src="js/calculate.js"></script>
 <script src="js/jquery.js"></script>
+<script src="js/slider.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -14,53 +15,56 @@ Weight, Turnover, Profit, Expenditure -->
 <h1>This Little Piggy</h1>
 <div id="welcome">
 <h2>Welcome</h2>
-<p>Here's some text. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.</p>
+<p>Here's some text. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.ere's. It's a filler. And it repeats.ere's some text. It's a filler. And it repeats.</p>
 <button id="gogo">Let's Go!</button>
 </div>
 <form id="calculate">
-<div class="field--wrapper">
-<label>Length</label><input type="number" name="fname" id="length" value="1">
-</div>
-<br>
-<div class="field--wrapper">
-<label>Girth</label><input type="number" id="girth" >
-</div>
-<br>
-<div class="field--wrapper">
-<label>Price of Food</label><input type="number" id="foodPrice">
-</div>
-<br>
-<div class="field--wrapper">
-<label>kgs of Food</label><input type="number" id="foodAmount">
-</div>
-<br>
-<div class="field--wrapper">
-<label>Selling Price/kg</label><input type="number" id="sellPrice">
-</div>
-<br>
-<div class="field--wrapper">
-<label>Butchering Fee</label><input type="number" id="butcherPrice">
-</div>
-<br>
-<div class="field--wrapper">
-<label>Abattoir Fee</label><input type="number" id="abPrice">
-</div>
-<br>
-<div class="field--wrapper">
-<label>Other Costs</label><input type="number" id="otherPrice">
-</div>
-<br>
-<button id="submit">Calculate</button>
+	<div class="field--wrapper">
+		<label>Length<span id="unit">Inch</span></label><input type="number" name="fname" id="length" value="1">
+	</div>
+	<br>
+	<div class="field--wrapper">
+		<label>Girth<span id="unit">Inch</span></label><input type="number" id="girth" >
+	</div>
+	<br>
+		<div id="preferences">
+			<div class="field--wrapper">
+				<label>Price of Food<span id="unit">&pound;/kg</span></label><input type="number" id="foodPrice" value="3">
+			</div>
+			<br>
+			<div class="field--wrapper">
+				<label>Food Used<span id="unit">/kg/day</span></label><input type="number" id="foodAmount" value="1">
+			</div>
+			<br>
+			<div class="field--wrapper">
+				<label>Selling Price<span id="unit">&pound;/kg</span></label><input type="number" id="sellPrice">
+			</div>
+			<br>
+			<div class="field--wrapper">
+				<label>Butchering Fee<span id="unit">&pound;</span></label><input type="number" id="butcherPrice">
+			</div>
+			<br>
+			<div class="field--wrapper">
+				<label>Abattoir Fee<span id="unit">&pound;</span></label><input type="number" id="abPrice">
+			</div>
+			<br>
+			<div class="field--wrapper">
+				<label>Other Costs<span id="unit">&pound;</span></label><input type="number" id="otherPrice">
+			</div>
+			<button id="save">Save</button>
+		</div>
+	<br>
+	<button id="submit">Calculate</button><button id="showPreferences">Preferences</button>
 </form>
 
 <p id="result">
-    Weight:<span id="weight">&nbsp;</span>
+    <span id="weight"></span>
     <br>
-    Profit:<span id="profit">&nbsp;</span>
+    <span id="profit">&nbsp;</span>
     <br>
-    Turnover:<span id="turnover">&nbsp;</span>
+    <span id="turnover">&nbsp;</span>
     <br>
-    Expenditure:<span id="expenditure">&nbsp;</span>
+    <span id="expenditure">&nbsp;</span>
     <br>
     <button id="back">Go Back</button>
 </p>
