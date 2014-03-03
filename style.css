@@ -46,7 +46,15 @@ button {
 	color: #fff;
 	margin-left: auto;
 	margin-right: auto;
-	bottom: 0;
+	position : absolute;
+    bottom : 0;
 
-	
+}
+
+#showPreferences {
+	margin-left: 70px;
+}
+
+#savePreferences {
+	margin-left: 185px;
 }

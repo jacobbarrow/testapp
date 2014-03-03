@@ -15,7 +15,7 @@ window.onload = function(){
         form = el('calculate'),
         back = el('back'),
         go = el('gogo'),
-        save = el('save'),
+        savePreferences = el('savePreferences'),
         button = el('submit');
 
     function el(id) {
@@ -48,12 +48,12 @@ window.onload = function(){
 		return false;
 
   	}
-  	function savePreferences() {
-	  	localStorage.foodPrice=document.foodPrice.value;
+  	function savePref() {
+	  	localStorage.foodPrice=document.getElementbyId('foodPrice').value;
 	  	return false;
   	}
     button.onclick = calculate;
     back.onclick = goBack;
     go.onclick = enter;
-    save.onclick = savePreferences;
+    savePreferences.onclick = savePref;
 };
